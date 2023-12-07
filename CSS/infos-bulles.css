@@ -1,0 +1,66 @@
+.tooltip {
+  position: relative;
+}
+.tooltip:after {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 12px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.tooltip:after::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover:after {
+  display: block;
+  text-align: center;
+}
+.tooltip:hover[data-placement=right]:after {
+  left: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.tooltip:hover[data-placement=right]::before {
+  left: -12px;
+}
+.tooltip:hover[data-placement=left]:after {
+  right: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.tooltip:hover[data-placement=left]::before {
+  right: -12px;
+}
+.tooltip:hover[data-placement=top]:after {
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.tooltip:hover[data-placement=top]::before {
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.tooltip:hover[data-placement=bottom]:after {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.tooltip:hover[data-placement=bottom]::before {
+  top: -12px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}/*# sourceMappingURL=infos-bulles.css.map */

@@ -1,0 +1,72 @@
+// Tailles des écrans utilisées pour les media queries
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+// Classes pour afficher/cacher les éléments en fonction de la taille de l'écran
+.visible-xs {
+  display: none;
+  @media (max-width: $screen-xs) {
+    display: block !important;
+  }
+}
+
+.visible-sm {
+  display: none;
+  @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+    display: block !important;
+  }
+}
+
+.visible-md {
+  display: none;
+  @media (min-width: $screen-sm) and (max-width: $screen-md) {
+    display: block !important;
+  }
+}
+
+.visible-lg {
+  display: none;
+  @media (min-width: $screen-md) {
+    display: block !important;
+  }
+}
+
+.hidden-xs {
+  @media (max-width: $screen-xs) {
+    display: none !important;
+  }
+}
+
+.hidden-sm {
+  @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+    display: none !important;
+  }
+}
+
+.hidden-md {
+  @media (min-width: $screen-sm) and (max-width: $screen-md) {
+    display: none !important;
+  }
+}
+
+.hidden-lg {
+  @media (min-width: $screen-md) {
+    display: none !important;
+  }
+}
+
+// Classes pour afficher/cacher les éléments lors de l'impression
+.visible-print {
+  display: none;
+  @media print {
+    display: block !important;
+  }
+}
+
+.hidden-print {
+  @media print {
+    display: none !important;
+  }
+}

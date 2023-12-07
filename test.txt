@@ -1,0 +1,186 @@
+                // partie container //
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-6">col-6</div>
+                        <div class="col-6">col-6</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">col-8</div>
+                        <div class="col-2">col-2</div>
+                        <div class="col-2">col-2</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">col-4</div>
+                        <div class="col-4">col-4</div>
+                        <div class="col-4">col-4</div>
+                    </div>
+
+                </div>
+                <div class="container-fluid"></div>
+                
+                
+                // PARTIE BOUTONS //
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+
+
+                <h2>Boutons</h2>
+
+                <button class="btn btn-primary">Bouton primaire</button>
+                <button class="btn btn-secondary">Bouton secondaire</button>
+                <button class="btn btn-success">Bouton réussite</button>
+                <button class="btn btn-danger">Bouton danger</button>
+                <button class="btn btn-warning">Bouton avertissement</button>
+                <button class="btn btn-info">Bouton info</button>
+                <button class="btn btn-light">Bouton léger</button>
+                <button class="btn btn-dark">Bouton sombre</button>
+                <button class="btn btn-link">Bouton lien</button>
+
+                <hr>
+
+                <h3>Boutons avec états</h3>
+
+                <button class="btn btn-primary active">Bouton actif primaire</button>
+                <button class="btn btn-secondary active">Bouton actif secondaire</button>
+                <button class="btn btn-success disabled">Bouton réussite désactivé</button>
+                <button class="btn btn-danger disabled">Bouton danger désactivé</button>
+                <button class="btn btn-warning disabled">Bouton avertissement désactivé</button>
+                <button class="btn btn-info disabled">Bouton info désactivé</button>
+                <button class="btn btn-light disabled">Bouton léger désactivé</button>
+                <button class="btn btn-dark disabled">Bouton sombre désactivé</button>
+
+                <hr>
+
+                <h3>Boutons de différentes tailles</h3>
+
+                <button class="btn btn-primary btn-lg">Bouton primaire large</button>
+                <button class="btn btn-secondary">Bouton secondaire normal</button>
+                <button class="btn btn-success btn-sm">Bouton réussite petit</button>
+                <button class="btn btn-danger btn-xs">Bouton danger très petit</button>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <h2>Images</h2>
+
+                <img src="./images/tree-736885__480.jpg" class="img-responsive" alt="Placeholder image">
+
+                <h3>Images avec bordures arrondies</h3>
+
+                <img src="./images/tree-736885__480.jpg" class="img-responsive img-rounded" alt="Placeholder image">
+
+                <h3>Images avec bordures circulaires</h3>
+
+                <img src="./images/tree-736885__480.jpg" class="img-responsive img-circle" alt="Placeholder image">
+
+                <h3>Images avec bordures en vignette</h3>
+
+                <img src="./images/tree-736885__480.jpg" class="img-responsive img-thumbnail" alt="Placeholder image">
+
+                <h3>Images floues</h3>
+
+                <img src="./images/tree-736885__480.jpg" class="img-responsive img-blur" alt="Placeholder image">
+
+            </div>
+
+
+
+            // MASQUER LES ELEMENTS // 
+    <div class="visible-xs">Visible uniquement sur mobile</div>
+    <div class="visible-sm">Visible uniquement sur tablette</div>
+    <div class="visible-md">Visible uniquement sur ordinateur</div>
+    <div class="visible-lg">Visible uniquement sur grands écrans</div>
+
+    <div class="hidden-xs">Caché sur mobile</div>
+    <div class="hidden-sm">Caché sur tablette</div>
+    <div class="hidden-md">Caché sur ordinateur</div>
+    <div class="hidden-lg">Caché sur grands écrans</div>
+
+    <button onclick="window.print()">Imprimer</button>
+    <div class="visible-print">Visible lors de l'impression</div>
+    <div class="hidden-print">Caché lors de l'impression</div>
+
+        // NAVBAR //
+
+            <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">À propos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Menu déroulant
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Autre action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Séparateur</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+                    // POPIN //
+
+    <button class="btn" data-target="#myModal">Ouvrir la popin</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="popin-dismiss">&times;</span>
+            <h2>Popin</h2>
+            <p>Ceci est une popin. Cliquez en dehors pour la fermer.</p>
+        </div>
+    </div>
+            
+
+
+            // ONGLETS //
+        <ul class="tab-list">
+        <li class="active"><a href="#" data-target="#tab1">Onglet 1</a></li>
+        <li><a href="#" data-target="#tab2">Onglet 2</a></li>
+        <li><a href="#" data-target="#tab3">Onglet 3</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+          <h2>Onglet 1</h2>
+          <p>Contenu de l'onglet 1.</p>
+        </div>
+        <div id="tab2" class="tab-pane">
+          <h2>Onglet 2</h2>
+          <p>Contenu de l'onglet 2.</p>
+        </div>
+        <div id="tab3" class="tab-pane">
+          <h2>Onglet 3</h2>
+          <p>Contenu de l'onglet 3.</p>
+          <ul class="tab-list">
+            <li class="active"><a href="#" data-target="#tab31">Onglet 3.1</a></li>
+            <li><a href="#" data-target="#tab32">Onglet 3.2</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab31" class="tab-pane active">
+              <h3>Onglet 3.1</h3>
+              <p>Contenu de l'onglet 3.1.</p>
+            </div>
+            <div id="tab32" class="tab-pane">
+              <h3>Onglet 3.2</h3>
+              <p>Contenu de l'onglet 3.2.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      //INFO-BULLES//
+
+          <button class="btn tooltip" title="Ceci est une info-bulle" data-placement="right" data-delay="500">
+        Bouton </button>
